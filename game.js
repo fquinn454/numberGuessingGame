@@ -18,6 +18,10 @@ guessButton.addEventListener('click', () => {
   target = generateTarget();
   // Retrieve the player's guess
   const currentHumanGuess = humanGuessInput.value;
+  
+  // Generate alert if user guesses outside range
+  generateAlert(currentHumanGuess);
+
   // Make a random 'computer guess'
   const computerGuess = Math.floor(Math.random() * 10);
 
