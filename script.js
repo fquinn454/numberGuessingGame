@@ -28,7 +28,8 @@ const generateAlert = (userGuess) => {
     if (userGuess < 0 || userGuess > 9) {
         window.alert('Guess must be between 0 - 9 inclusive');
         humanGuessInputdocument.getElementById('human-guess').reset();
-        humanGuessInputdocument.getElementById('human-guess').value = '';
+        document.getElementById('human-guess').value = '';
+       
     }
 }
     
