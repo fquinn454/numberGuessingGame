@@ -26,11 +26,9 @@ const advanceRound = () => currentRoundNumber++;
 // Generate alert if user guess is out of range
 const generateAlert = (userGuess) => {
     if (userGuess < 0 || userGuess > 9) {
-        window.alert('Guess must be between 0 - 9 inclusive');   
-        document.getElementById('human-guess').value=0;
+        window.alert('Guess must be between 0 - 9 inclusive');
+        humanGuessInputdocument.getElementById('human-guess').reset();
+        document.getElementById('human-guess').value = 0;
     }
 }
-
-// Clear user input if guess out of range
-const clearInput = => document.getElementById('human-guess').value=0;
     
