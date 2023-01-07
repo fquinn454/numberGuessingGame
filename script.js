@@ -27,8 +27,6 @@ const advanceRound = () => currentRoundNumber++;
 const generateAlert = (userGuess) => {
     if (userGuess < 0 || userGuess > 9) {
         window.alert('Guess must be between 0 - 9 inclusive');   
-        const myWindow = window.open("", "", "width=200, height=100"); 
-        myWindow.focus();
         document.getElementById('human-guess').value=0;
     }
 }
